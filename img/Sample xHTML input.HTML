@@ -1,0 +1,1949 @@
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:iso4217='http://www.xbrl.org/2003/iso4217' xmlns:ix='http://www.xbrl.org/2008/inlineXBRL' xmlns:xbrli='http://www.xbrl.org/2003/instance' xmlns:link='http://www.xbrl.org/2003/linkbase' xmlns:xbrldi='http://xbrl.org/2006/xbrldi' xmlns:ixt='http://www.xbrl.org/inlineXBRL/transformation/2011-07-31' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:frs-102='http://xbrl.frc.org.uk/FRS-102/2019-01-01' xmlns:countries='http://xbrl.frc.org.uk/cd/2019-01-01/countries' xmlns:uk-countries='http://www.xbrl.org/uk/cd/countries/2009-09-01' xmlns:dpl='http://www.hmrc.gov.uk/schemas/ct/dpl/2019-01-01' xmlns:curr='http://xbrl.frc.org.uk/cd/2019-01-01/currencies' xmlns:lang='http://xbrl.frc.org.uk/cd/2019-01-01/languages' xmlns:nonnum='http://www.xbrl.org/dtr/type/non-numeric' xmlns:num='http://www.xbrl.org/dtr/type/numeric' xmlns:types='http://xbrl.frc.org.uk/general/2019-01-01/types' xmlns:xbrldt='http://xbrl.org/2005/xbrldt' xmlns:ref='http://www.xbrl.org/2006/ref' xmlns:uk-ref='http://xbrl.frc.org.uk/general/2019-01-01/ref' xmlns:bus='http://xbrl.frc.org.uk/cd/2019-01-01/business' xmlns:common='http://xbrl.frc.org.uk/general/2019-01-01/common' xmlns:accrep='http://xbrl.frc.org.uk/reports/2019-01-01/accrep' xmlns:core='http://xbrl.frc.org.uk/fr/2019-01-01/core' xmlns:aurep='http://xbrl.frc.org.uk/reports/2019-01-01/aurep' xmlns:direp='http://xbrl.frc.org.uk/reports/2019-01-01/direp' xmlns:secr='http://xbrl.frc.org.uk/secr/2019-04-01'>
+<head><style type="text/css"><!-- --></style><style type="text/css"><!-- /* Font Definitions */ @font-face    {font-family:Helvetica;    panose-1:2 11 6 4 2 2 2 2 2 4;}@font-face    {font-family:Courier;    panose-1:2 7 4 9 2 2 5 2 4 4;}@font-face    {font-family:"Tms Rmn";    panose-1:2 2 6 3 4 5 5 2 3 4;}@font-face    {font-family:Helv;    panose-1:2 11 6 4 2 2 2 3 2 4;}@font-face    {font-family:"New York";    panose-1:2 4 5 3 6 5 6 2 3 4;}@font-face    {font-family:System;    panose-1:0 0 0 0 0 0 0 0 0 0;}@font-face    {font-family:Wingdings;    panose-1:5 0 0 0 0 0 0 0 0 0;}@font-face    {font-family:"MS Mincho";    panose-1:2 2 6 9 4 2 5 8 3 4;}@font-face    {font-family:Batang;    panose-1:2 3 6 0 0 1 1 1 1 1;}@font-face    {font-family:SimSun;    panose-1:2 1 6 0 3 1 1 1 1 1;}@font-face    {font-family:PMingLiU;    panose-1:2 1 6 1 0 1 1 1 1 1;}@font-face    {font-family:"MS Gothic";    panose-1:2 11 6 9 7 2 5 8 2 4;}@font-face    {font-family:Dotum;    panose-1:2 11 6 0 0 1 1 1 1 1;}@font-face    {font-family:SimHei;    panose-1:2 1 6 0 3 1 1 1 1 1;}@font-face    {font-family:MingLiU;    panose-1:2 1 6 9 0 1 1 1 1 1;}@font-face    {font-family:Mincho;    panose-1:2 2 6 9 4 3 5 8 3 5;}@font-face    {font-family:Gulim;    panose-1:2 11 6 0 0 1 1 1 1 1;}@font-face    {font-family:Century;    panose-1:2 4 6 4 5 5 5 2 3 4;}@font-face    {font-family:"Angsana New";    panose-1:2 2 6 3 5 4 5 2 3 4;}@font-face    {font-family:"Cordia New";    panose-1:2 11 3 4 2 2 2 2 2 4;}@font-face    {font-family:Mangal;    panose-1:0 0 4 0 0 0 0 0 0 0;}@font-face    {font-family:Latha;    panose-1:2 0 4 0 0 0 0 0 0 0;}@font-face    {font-family:Sylfaen;    panose-1:1 10 5 2 5 3 6 3 3 3;}@font-face    {font-family:Vrinda;    panose-1:0 0 4 0 0 0 0 0 0 0;}@font-face    {font-family:Raavi;    panose-1:2 0 5 0 0 0 0 0 0 0;}@font-face    {font-family:Shruti;    panose-1:2 0 5 0 0 0 0 0 0 0;}@font-face    {font-family:Sendnya;    panose-1:0 0 4 0 0 0 0 0 0 0;}@font-face    {font-family:Gautami;    panose-1:2 0 5 0 0 0 0 0 0 0;}@font-face    {font-family:Tunga;    panose-1:0 0 4 0 0 0 0 0 0 0;}@font-face    {font-family:"Estrangelo Edessa";    panose-1:0 0 0 0 0 0 0 0 0 0;}@font-face    {font-family:"Cambria Math";    panose-1:2 4 5 3 5 4 6 3 2 4;}@font-face    {font-family:"Arial Unicode MS";    panose-1:2 11 6 4 2 2 2 2 2 4;}@font-face    {font-family:"Calibri Light";    panose-1:2 15 3 2 2 2 4 3 2 4;}@font-face    {font-family:Calibri;    panose-1:2 15 5 2 2 2 4 3 2 4;}@font-face    {font-family:"Segoe UI";    panose-1:2 11 5 2 4 2 4 2 2 3;}@font-face    {font-family:Cambria;    panose-1:2 4 5 3 5 4 6 3 2 4;} /* Style Definitions */ p.MsoNormal, li.MsoNormal, div.MsoNormal    {margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:10.0pt;    font-family:"Times New Roman",serif;}h1    {mso-style-link:"Heading 1 Char";    margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:10.0pt;    font-family:"Times New Roman",serif;    font-weight:normal;}h2    {mso-style-link:"Heading 2 Char";    margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:10.0pt;    font-family:"Times New Roman",serif;    font-weight:normal;}p.MsoCommentText, li.MsoCommentText, div.MsoCommentText    {mso-style-link:"Comment Text Char";    margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:10.0pt;    font-family:"Times New Roman",serif;}p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject    {mso-style-link:"Comment Subject Char";    margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:10.0pt;    font-family:"Times New Roman",serif;    font-weight:bold;}p.MsoAcetate, li.MsoAcetate, div.MsoAcetate    {mso-style-link:"Balloon Text Char";    margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:9.0pt;    font-family:"Segoe UI",sans-serif;}span.Heading1Char    {mso-style-name:"Heading 1 Char";    mso-style-link:"Heading 1";    font-family:"Cambria",serif;    color:#365F91;    font-weight:bold;}span.Heading2Char    {mso-style-name:"Heading 2 Char";    mso-style-link:"Heading 2";    font-family:"Cambria",serif;    color:#4F81BD;    font-weight:bold;}p.aftertable, li.aftertable, div.aftertable    {mso-style-name:after_table;    mso-style-link:"after_table Char";    margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:6.0pt;    font-family:"Times New Roman",serif;}span.aftertableChar    {mso-style-name:"after_table Char";    mso-style-link:after_table;    font-family:"Times New Roman",serif;}p.beforetable, li.beforetable, div.beforetable    {mso-style-name:before_table;    mso-style-link:"before_table Char";    margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:6.0pt;    font-family:"Times New Roman",serif;}span.beforetableChar    {mso-style-name:"before_table Char";    mso-style-link:before_table;    font-family:"Times New Roman",serif;}p.indenttable5, li.indenttable5, div.indenttable5    {mso-style-name:indent_table_5;    mso-style-link:"indent_table_5 Char";    margin:0cm;    margin-bottom:.0001pt;    text-autospace:none;    font-size:6.0pt;    font-family:"Times New Roman",serif;}span.indenttable5Char    {mso-style-name:"indent_table_5 Char";    mso-style-link:indent_table_5;    font-family:"Times New Roman",serif;}span.CommentTextChar    {mso-style-name:"Comment Text Char";    mso-style-link:"Comment Text";    font-family:"Times New Roman",serif;}span.CommentSubjectChar    {mso-style-name:"Comment Subject Char";    mso-style-link:"Comment Subject";    font-family:"Times New Roman",serif;    font-weight:bold;}span.BalloonTextChar    {mso-style-name:"Balloon Text Char";    mso-style-link:"Balloon Text";    font-family:"Segoe UI",sans-serif;}span.msoIns    {mso-style-name:"";    text-decoration:underline;    color:teal;}span.msoDel    {mso-style-name:"";    text-decoration:line-through;    color:Black;} /* Page Definitions */ @page WordSection1    {size:21.0cm 841.95pt;    margin:36.0pt 36.0pt 36.0pt 36.0pt;}div.WordSection1    {page:WordSection1;}--></style><title> </title><style type="text/css"> body.c118 {text-justify-trim:punctuation} hr.c117 {text-align: left} td.c116 {width:40.0%;padding:0cm 0cm 0cm 0cm} span.c115 {font-size:11.0pt;color:Black;background:White} span.c114 {font-size:11.0pt;color:Black;background:White} td.c113 {width:25.0%;padding:0cm 0cm 0cm 0cm} p.c112 {margin-left:9.0pt} td.c111 {width:18.0%;border:none;border-bottom: solid windowtext 2.25pt;padding:0cm 0cm 0cm 0cm} td.c110 {width:64.0%;padding:0cm 0cm 0cm 0cm} span.c109 {font-size:11.0pt;color:black;background:white} br.c108 {page-break-before:always} span.c107 {color:Black;background: White} span.c106 {font-size:8.0pt;color:Black;background:aqua} span.c105 {font-size:11.0pt; color:Black;background:White} td.c104 {width:60.0%;padding:0cm 0cm 0cm 0cm} span.c103 {font-size: 11.0pt} td.c102 {width:30.0%;padding:0cm 0cm 0cm 0cm} span.c101 {font-size:14.0pt;color:Black;background:White} span.c100 {font-size:11.0pt;font-family:Symbol} span.c99 {font-size:9.0pt} td.c98 {width:15.0%;border:none;border-bottom:solid windowtext 2.25pt; padding:0cm 0cm 0cm 0cm} span.c97 {color:Black;background:White} td.c96 {width:15.0%;border:none;border-bottom:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} span.c95 {color:Black;background:White} td.c94 {width:12.0%;border:none;border-bottom:solid windowtext 2.25pt; padding:0cm 0cm 0cm 0cm} span.c93 {color:Black;background:White} td.c92 {width:12.0%;border:none;border-bottom: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm} td.c91 {width:12.0%;border:none;padding:0cm 0cm 0cm 0cm} td.c90 {width:12.0%;border:none;border-bottom:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} span.c89 {font-size:11.0pt;color:Black;background:White} span.c88 {font-size:11.0pt;color:Black;background:White} td.c87 {width:12.0%;padding:0cm 0cm 0cm 0cm} td.c86 {width:42.0%;padding:0cm 0cm 0cm 0cm} span.c85 {color:Black; background:White} td.c84 {width:18.0%;border:none;border-bottom:solid windowtext 2.25pt; padding:0cm 0cm 0cm 0cm} td.c83 {width:54.0%;border:none;padding:0cm 0cm 0cm 0cm} td.c82 {width:54.0%;border-top:none;border-left: solid windowtext 1.0pt;border-bottom:solid windowtext 1.0pt;border-right: none;padding:0cm 0cm 0cm 0cm} td.c81 {width:18.0%;border:none;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c80 {width:18.0%;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c79 {width:18.0%;border:none;border-bottom: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm} td.c78 {width:10.0%;border:none;padding:0cm 0cm 0cm 0cm} td.c77 {width:54.0%;border:none;border-left:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c76 {width:10.0%;border:none;border-bottom:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c75 {width:54.0%;border:none;border-bottom:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c74 {width:18.0%;border:none;border-bottom:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c73 {width:18.0%;border:none;padding:0cm 0cm 0cm 0cm} tr.c72 {height:8.1pt} span.c71 {color:Black;background:White} td.c70 {width:18.0%;border:none;border-bottom:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm;height:8.1pt} td.c69 {width:10.0%;padding:0cm 0cm 0cm 0cm; height:8.1pt} td.c68 {width:54.0%;padding:0cm 0cm 0cm 0cm; height:8.1pt} span.c67 {font-size:11.0pt;color:Black;background:White} td.c66 {width:18.0%;padding:0cm 0cm 0cm 0cm} td.c65 {width:54.0%;padding:0cm 0cm 0cm 0cm} span.c64 {font-size:3.0pt} span.c63 {font-size:1.0pt} p.c62 {font-style: italic; text-align: justify} span.c61 {font-size:8.0pt;font-family:Symbol} span.c60 {font-size:8.0pt;color:Black;background:White} span.c59 {font-size:8.0pt;font-family:Symbol;color:Black;background:White} span.c58 {font-family:Symbol;color:Black;background:White} span.c57 {font-size:8.0pt;color:Black; background:White} span.c56 {font-size:8.0pt} td.c55 {width:95.0%;padding:0cm 0cm 0cm 0cm} span.c54 {font-size:11.0pt;font-family:Symbol;color:Black;background:White} span.c53 {color:Black;background:aqua} span.c52 {font-size:11.0pt;color:Black;background:White} span.c51 {text-transform:uppercase} span.c50 {font-size:11.0pt;text-transform:uppercase} span.c49 {background:white} span.c48 {font-size:11.0pt;color:Black; background:White} span.c47 {color:Black;background: White} span.c46 {color:black;background: white} span.c45 {color:Black;background:White} td.c44 {width:50.0%;padding:0cm 0cm 0cm 0cm} span.c43 {font-family:Symbol} table.c42 {width:100.0%;border-collapse:collapse;border:none} td.c41 {width:45.0%;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c40 {width:15.0%;border-top:none;border-left: none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c39 {width:25.0%;border:solid windowtext 1.0pt; border-top:none;padding:0cm 0cm 0cm 0cm} td.c38 {width:45.0%;border:solid windowtext 1.0pt; border-left:none;padding:0cm 0cm 0cm 0cm} td.c37 {width:15.0%;border:solid windowtext 1.0pt; border-left:none;padding:0cm 0cm 0cm 0cm} td.c36 {width:25.0%;border:solid windowtext 1.0pt; padding:0cm 0cm 0cm 0cm} td.c35 {width:15.0%;border:none;border-bottom: solid windowtext 2.25pt;padding:0cm 0cm 0cm 0cm} td.c34 {width:15.0%;border:none;padding:0cm 0cm 0cm 0cm} td.c33 {width:15.0%;border:none;border-bottom: solid windowtext 1.0pt;padding:0cm 0cm 0cm 0cm} p.c32 {font-style: italic; text-align: right} p.c31 {font-style: italic} td.c30 {width:15.0%;padding:0cm 0cm 0cm 0cm} td.c29 {width:55.0%;padding:0cm 0cm 0cm 0cm} td.c28 {width:5.0%;padding:0cm 0cm 0cm 0cm} span.c27 {font-family:"Arial",sans-serif} span.c26 {font-size:2.0pt} span.c25 {color:Black;background:White} p.c24 {font-weight: bold; text-align: justify} span.c23 {text-decoration:none} span.c22 {color:black;background:white} span.c21 {font-size:11.0pt;color:black; background:white} span.c20 {font-size:11.0pt;color:Black; background:White} td.c19 {width:65.0%;padding:0cm 0cm 0cm 0cm} td.c18 {width:35.0%;padding:0cm 0cm 0cm 0cm} span.c17 {font-size:10.0pt} p.c16 {text-align: right} td.c15 {width:10.0%;padding:0cm 0cm 0cm 0cm} td.c14 {width:90.0%;padding:0cm 0cm 0cm 0cm} p.c13 {font-weight: bold} p.c12 {text-align: center} span.c11 {font-size:14.0pt} br.c10 {page-break-before: always} table.c9 {width:100.0%;border-collapse:collapse} span.c8 {font-size:16.0pt;color:Black;background:White} p.c7 {font-weight: bold; text-align: center} span.c6 {font-size:16.0pt;color:Black;background:White} p.c5 {text-align:justify} span.c4 {color:Black; background:White} td.c3 {width:100.0%;padding:0cm 0cm 0cm 0cm} p.c2 {font-weight: bold; text-align: right} span.c1 {font-size:11.0pt}.wsn{white-space:nowrap;} .vat{vertical-align: top;} .vab{vertical-align: bottom;}</style></head><body>
+<div style="display:none">
+<ix:header>
+<!-- The hidden element is used to contain XBRL facts that are not to be displayed in the Inline XBRL Document. -->
+<ix:hidden>
+<!--Special Items-->
+<ix:nonNumeric name="core:ControllingPartyUltimateControllingPartyTruefalse" contextRef="yFY1_X-ParentEntityOrControllingPartyUltimateControllingPartyGroupingDimension_368096_1">true</ix:nonNumeric>
+<!--Fixed Item Type-->
+<ix:nonNumeric name="bus:MainIndustrySector" contextRef="yFY1_G-WholesaleRetailTradeRepairMotorVehiclesMotorcycles_364919"></ix:nonNumeric>
+<ix:nonNumeric name="bus:LegalFormEntity" contextRef="yFY1_PrivateLimitedCompanyLtd_364890"></ix:nonNumeric>
+<ix:nonNumeric name="bus:CountryFormationOrIncorporation" contextRef="yFY1_UnitedKingdom_362822"></ix:nonNumeric>
+<ix:nonNumeric name="bus:EntityTradingStatus" contextRef="yFY1"></ix:nonNumeric>
+<ix:nonNumeric name="bus:ScopeAccounts" contextRef="yFY1"></ix:nonNumeric>
+<ix:nonNumeric name="bus:AccountingStandardsApplied" contextRef="yFY1_FRS102_362259"></ix:nonNumeric>
+<ix:nonNumeric name="bus:AccountsStatusAuditedOrUnaudited" contextRef="yFY1_Audited_362279"></ix:nonNumeric>
+<ix:nonNumeric name="bus:AccountsTypeFullOrAbbreviated" contextRef="yFY1_FullAccounts_362296"></ix:nonNumeric>
+<ix:nonNumeric name="bus:ReportPeriod" contextRef="yFY1"></ix:nonNumeric>
+<ix:nonNumeric name="bus:PrincipalCurrencyUsedInBusinessReport" contextRef="yFY1_PoundSterling_363137"></ix:nonNumeric>
+<ix:nonNumeric name="bus:ReportPrincipalLanguage" contextRef="yFY1"></ix:nonNumeric>
+<ix:nonNumeric name="direp:DirectorSigningDirectorsReport" contextRef="yFY1_Director1_363921"></ix:nonNumeric>
+<ix:nonNumeric name="core:DirectorSigningFinancialStatements" contextRef="yFY1_Director1_363921"></ix:nonNumeric>
+
+<!--Default Section-->
+<ix:nonNumeric contextRef="yFY1" name="bus:NameProductionSoftware">DataTracks-DataTagger</ix:nonNumeric>
+<ix:nonNumeric contextRef="yFY1" name="bus:VersionProductionSoftware">2.0</ix:nonNumeric>
+<ix:nonNumeric contextRef="yFY1" name="bus:EntityDormantTruefalse">false</ix:nonNumeric>
+<ix:nonNumeric contextRef="eFY1" name="bus:StartDateForPeriodCoveredByReport">2021-01-01</ix:nonNumeric>
+
+
+<ix:nonNumeric contextRef="yFY1" name="bus:ReportIncludesStrategicReportTruefalse">true</ix:nonNumeric>
+<ix:nonNumeric contextRef="yFY1" name="bus:ReportIncludesListSubsidiariesTruefalse">true</ix:nonNumeric>
+<ix:nonNumeric contextRef="yFY1" name="aurep:DirectorsReportConsistentWithAccountsTruefalse">true</ix:nonNumeric>
+<ix:nonNumeric contextRef="yFY1" name="core:FinancialStatementsArePreparedOnGoing-concernBasisTruefalse">true</ix:nonNumeric>
+<ix:nonNumeric contextRef="yFY1" name="core:EntityHasClaimedExemptionFromFRS102Chapters1112DisclosureRequirementsInLineWithFRS1021.12cTruefalse">true</ix:nonNumeric>
+<ix:nonNumeric contextRef="yFY1" name="core:EntityHasClaimedExemptionFromReportingDisclosureRelatedPartyTransactionsForWholly-ownedEntitiesTruefalse">true</ix:nonNumeric>
+<ix:nonNumeric contextRef="yFY1" name="core:EntityHasClaimedExemptionFromReportingDisclosureKeyManagementPersonnelCompensationTruefalse">true</ix:nonNumeric>
+
+<!-- Tuple-->
+
+</ix:hidden>
+<!-- The references element is used to contain XBRL schemaRef and linkbaseRef elements which are required by the target XBRL instance. -->
+<ix:references>
+<link:schemaRef xlink:href="https://xbrl.frc.org.uk/FRS-102/2019-01-01/FRS-102-2019-01-01.xsd" xlink:type='simple'></link:schemaRef>
+</ix:references>
+<!-- The resources element is used to contain XBRL roleRef, arcroleRef, context or unit elements which are required by the target XBRL instance. -->
+<ix:resources>
+
+
+<!--Context Section-->
+
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01071904</identifier>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01071904</identifier>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY0">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+</entity>
+<period>
+<instant>2019-12-31</instant>
+</period>
+</context>
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+
+<!--Unit Section-->
+<unit xmlns="http://www.xbrl.org/2003/instance" id="EUR">
+<measure>iso4217:EUR</measure>
+</unit>
+<unit xmlns="http://www.xbrl.org/2003/instance" id="GBP">
+<measure>iso4217:GBP</measure>
+</unit>
+<unit xmlns="http://www.xbrl.org/2003/instance" id="USD">
+<measure>iso4217:USD</measure>
+</unit>
+
+
+<!--Default Unit Section-->
+<unit xmlns="http://www.xbrl.org/2003/instance" id="shares">
+<measure>xbrli:shares</measure>
+</unit>
+<unit xmlns="http://www.xbrl.org/2003/instance" id="pure">
+<measure>xbrli:pure</measure>
+</unit>
+<unit xmlns="http://www.xbrl.org/2003/instance" id="EUR_pershare">
+<divide>
+<unitNumerator><measure>iso4217:EUR</measure></unitNumerator>
+<unitDenominator><measure>xbrli:shares</measure></unitDenominator>
+</divide>
+</unit>
+<unit xmlns="http://www.xbrl.org/2003/instance" id="GBP_pershare">
+<divide>
+<unitNumerator><measure>iso4217:GBP</measure></unitNumerator>
+<unitDenominator><measure>xbrli:shares</measure></unitDenominator>
+</divide>
+</unit>
+<unit xmlns="http://www.xbrl.org/2003/instance" id="USD_pershare">
+<divide>
+<unitNumerator><measure>iso4217:USD</measure></unitNumerator>
+<unitDenominator><measure>xbrli:shares</measure></unitDenominator>
+</divide>
+</unit>
+
+
+<!--Dimension Section-->
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_PrivateLimitedCompanyLtd_364890">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:LegalFormEntityDimension">bus:PrivateLimitedCompanyLtd</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_UnitedKingdom_362822">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="countries:CountriesRegionsDimension">countries:UnitedKingdom</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_G-WholesaleRetailTradeRepairMotorVehiclesMotorcycles_364919">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:MainIndustrySectorDimension">bus:G-WholesaleRetailTradeRepairMotorVehiclesMotorcycles</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_FRS102_362259">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:AccountingStandardsDimension">bus:FRS102</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Audited_362279">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:AccountsStatusDimension">bus:Audited</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_FullAccounts_362296">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:AccountsTypeDimension">bus:FullAccounts</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_PoundSterling_363137">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="curr:CurrenciesDimension">curr:PoundSterling</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_RegisteredOffice_363456">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:EntityContactTypeDimension">bus:RegisteredOffice</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Director2_363921">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Director3_363921">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_Director3_363921">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director3</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_Director2_363921">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director2</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Director1_363921">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:Director1</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_CurrentInventories_430506">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:CurrentNon-currentInventoriesDimension">core:CurrentInventories</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_CurrentInventories_430506">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:CurrentNon-currentInventoriesDimension">core:CurrentInventories</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_CurrentFinancialInstruments_383991">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_CurrentFinancialInstruments_383991">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_CurrentFinancialInstruments_401811">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_CurrentFinancialInstruments_401811">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_CurrentFinancialInstruments_376746">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_CurrentFinancialInstruments_376746">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_Non-currentFinancialInstruments_376746">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_ShareCapitalOrdinaryShares_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapitalOrdinaryShares</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_ShareCapitalOrdinaryShares_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapitalOrdinaryShares</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_RetainedEarningsAccumulatedLosses_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_RetainedEarningsAccumulatedLosses_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY0_ShareCapitalOrdinaryShares_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapitalOrdinaryShares</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2019-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY0_RetainedEarningsAccumulatedLosses_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2019-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_RetainedEarningsAccumulatedLosses_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_RetainedEarningsAccumulatedLosses_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Land_437859">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:Land</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_MotorVehicles_437859">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:MotorVehicles</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_LeaseholdImprovements_ShortLeaseholdAssets_437859_437940">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:ShortLeaseholdAssets</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_FurnitureFittings_437859">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_ToolsEquipment_437859">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:ToolsEquipment</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_PlantMachinery_437859">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_ComputerSoftware_428995">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:ComputerSoftware</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_UnitedKingdom_421937">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:GeographicSegmentsDimension">countries:UnitedKingdom</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_UnitedKingdom_421937">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:GeographicSegmentsDimension">countries:UnitedKingdom</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_OtherCountriesRegions_421937">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:GeographicSegmentsDimension">countries:OtherCountriesRegions</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_OtherCountriesRegions_421937">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:GeographicSegmentsDimension">countries:OtherCountriesRegions</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_LandBuildingsUnderOperatingLeases_423811">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_LandBuildingsUnderOperatingLeases_423811">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_OtherAssetsUnderOperatingLeases_423811">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:OtherAssetsUnderOperatingLeases</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_OtherAssetsUnderOperatingLeases_423811">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:OtherAssetsUnderOperatingLeases</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_HighestPaidDirector_363921">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:HighestPaidDirector</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_HighestPaidDirector_363921">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="bus:EntityOfficersDimension">bus:HighestPaidDirector</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_LeaseholdImprovements_ShortLeaseholdAssets_438460_438541">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:ShortLeaseholdAssets</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_LeaseholdImprovements_ShortLeaseholdAssets_438460_438541">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:ShortLeaseholdAssets</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_PlantMachinery_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_PlantMachinery_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_FurnitureFittings_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_FurnitureFittings_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_ComputerEquipment_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:ComputerEquipment</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_ComputerEquipment_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:ComputerEquipment</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_FurnitureFittings_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_ComputerEquipment_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:ComputerEquipment</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_LeaseholdImprovements_ShortLeaseholdAssets_438460_438541">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:ShortLeaseholdAssets</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_PlantMachinery_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_LeaseholdImprovements_ShortLeaseholdAssets_438460_438541">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:LeaseholdImprovements</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:PPEOwnershipDimension">core:ShortLeaseholdAssets</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_PlantMachinery_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:PlantMachinery</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_FurnitureFittings_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:FurnitureFittings</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_ComputerEquipment_438460">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:PropertyPlantEquipmentClassesDimension">core:ComputerEquipment</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_ComputerSoftware_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:ComputerSoftware</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_ComputerSoftware_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:ComputerSoftware</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_ComputerSoftware_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:ComputerSoftware</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_ComputerSoftware_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:ComputerSoftware</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY0_ComputerSoftware_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:ComputerSoftware</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2019-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_ComputerSoftware_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:ComputerSoftware</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_CostValuation_Non-currentFinancialInstruments_434404_434537">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY0_CostValuation_Non-currentFinancialInstruments_434404_434537">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2019-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_CostValuation_Non-currentFinancialInstruments_434404_434537">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_CostValuation_Non-currentFinancialInstruments_434404_434537">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:CostValuation</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary1_444240">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:SubsidiariesDimension">core:Subsidiary1</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary2_444240">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:SubsidiariesDimension">core:Subsidiary2</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary3_444240">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:SubsidiariesDimension">core:Subsidiary3</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary4_444240">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:SubsidiariesDimension">core:Subsidiary4</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_CurrentFinancialInstruments_384784">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_CurrentFinancialInstruments_384784">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_CurrentFinancialInstruments_384784">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_CurrentFinancialInstruments_377486">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_Non-currentFinancialInstruments_377486">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:Non-currentFinancialInstruments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_LandBuildingsUnderOperatingLeases_437739">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_LandBuildingsUnderOperatingLeases_WithinOneYear_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_LandBuildingsUnderOperatingLeases_WithinOneYear_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_OtherAssetsUnderOperatingLeases_WithinOneYear_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:OtherAssetsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_OtherAssetsUnderOperatingLeases_WithinOneYear_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:OtherAssetsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:WithinOneYear</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_LandBuildingsUnderOperatingLeases_BetweenOneFiveYears_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:BetweenOneFiveYears</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_LandBuildingsUnderOperatingLeases_BetweenOneFiveYears_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:BetweenOneFiveYears</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_OtherAssetsUnderOperatingLeases_BetweenOneFiveYears_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:OtherAssetsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:BetweenOneFiveYears</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_OtherAssetsUnderOperatingLeases_BetweenOneFiveYears_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:OtherAssetsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:BetweenOneFiveYears</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_LandBuildingsUnderOperatingLeases_MoreThanFiveYears_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:MoreThanFiveYears</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_LandBuildingsUnderOperatingLeases_MoreThanFiveYears_437739_437750">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:MaturitiesOrExpirationPeriodsDimension">core:MoreThanFiveYears</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_LandBuildingsUnderOperatingLeases_437739">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:LandBuildingsUnderOperatingLeases</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_OtherAssetsUnderOperatingLeases_437739">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:OtherAssetsUnderOperatingLeases</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_OtherAssetsUnderOperatingLeases_437739">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:OperatingLeasePurposeDimension">core:OtherAssetsUnderOperatingLeases</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_FinancialAssetsFairValueThroughProfitOrLoss_401713">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialAssetsClassesCategoriesDimension">core:FinancialAssetsFairValueThroughProfitOrLoss</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_FinancialAssetsAmortisedCost_401713">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialAssetsClassesCategoriesDimension">core:FinancialAssetsAmortisedCost</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_FinancialAssetsAmortisedCost_401713">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialAssetsClassesCategoriesDimension">core:FinancialAssetsAmortisedCost</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_FinancialLiabilitiesAmortisedCost_413483">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialLiabilitiesClassesCategoriesDimension">core:FinancialLiabilitiesAmortisedCost</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_FinancialLiabilitiesAmortisedCost_413483">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialLiabilitiesClassesCategoriesDimension">core:FinancialLiabilitiesAmortisedCost</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_NetGoodwill_419495">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:NetGoodwill</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_NetGoodwill_419495">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:NetGoodwill</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_ShareCapitalOrdinaryShares_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:ShareCapitalOrdinaryShares</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_RetainedEarningsAccumulatedLosses_396109">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:EquityClassesDimension">core:RetainedEarningsAccumulatedLosses</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_FinancialAssetsAmortisedCost_413330">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentsClassesCategoriesDimension">core:FinancialAssetsAmortisedCost</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_FinancialInstrumentsCostLessImpairment_413330">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentsClassesCategoriesDimension">core:FinancialInstrumentsCostLessImpairment</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_OtherResidualIntangibleAssets_419495">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:OtherResidualIntangibleAssets</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_OtherResidualIntangibleAssets_419495">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:OtherResidualIntangibleAssets</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_NetGoodwill_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:NetGoodwill</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_NetGoodwill_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:NetGoodwill</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_NetGoodwill_428995">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:NetGoodwill</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_NetGoodwill_428995">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:NetGoodwill</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY0_NetGoodwill_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:NetGoodwill</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2019-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="sFY1_NetGoodwill_429813">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:IntangibleAssetClassesDimension">core:NetGoodwill</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_AcquisitionsIncreaseInInvestments_434404">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:AcquisitionsIncreaseInInvestments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_TransfersIntoOrOutInvestmentsIncreaseDecreaseInInvestments_434404">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:InvestmentsMovementsDimension">core:TransfersIntoOrOutInvestmentsIncreaseDecreaseInInvestments</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_CurrentInventories_430506">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:CurrentNon-currentInventoriesDimension">core:CurrentInventories</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_FinancialGuarantees_375970">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:ContingentLiabilitiesClassesDimension">core:FinancialGuarantees</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_FinancialGuarantees_375970">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:ContingentLiabilitiesClassesDimension">core:FinancialGuarantees</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary3_SaleOrPurchaseGoods_440651_441374">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:RelatedPartiesDimension">core:Subsidiary3</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:RelatedPartyTransactionTypeDimension">core:SaleOrPurchaseGoods</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_Subsidiary3_SaleOrPurchaseGoods_440651_441374">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:RelatedPartiesDimension">core:Subsidiary3</xbrldi:explicitMember>
+<xbrldi:explicitMember dimension="core:RelatedPartyTransactionTypeDimension">core:SaleOrPurchaseGoods</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_Subsidiary3_441482">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:RelatedPartiesDimension">core:Subsidiary3</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_Subsidiary3_441482">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:RelatedPartiesDimension">core:Subsidiary3</xbrldi:explicitMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-AnalysisDimension_423753_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_X-AnalysisDimension_423753_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-OtherSpecificAccountingPolicyGroupingDimension_368120_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="core:X-OtherSpecificAccountingPolicyGroupingDimension"><core:XOtherSpecificAccountingPolicyGroupingDimension.domain>1</core:XOtherSpecificAccountingPolicyGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-OtherSpecificAccountingPolicyGroupingDimension_368120_2">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="core:X-OtherSpecificAccountingPolicyGroupingDimension"><core:XOtherSpecificAccountingPolicyGroupingDimension.domain>2</core:XOtherSpecificAccountingPolicyGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-OtherSpecificCriticalEstimateJudgementGroupingDimension_368142_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="core:X-OtherSpecificCriticalEstimateJudgementGroupingDimension"><core:XOtherSpecificCriticalEstimateAndJudgementGroupingDimension.domain>1</core:XOtherSpecificCriticalEstimateAndJudgementGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-OtherSpecificCriticalEstimateJudgementGroupingDimension_368142_2">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="core:X-OtherSpecificCriticalEstimateJudgementGroupingDimension"><core:XOtherSpecificCriticalEstimateAndJudgementGroupingDimension.domain>2</core:XOtherSpecificCriticalEstimateAndJudgementGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-OtherSpecificCriticalEstimateJudgementGroupingDimension_368142_3">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="core:X-OtherSpecificCriticalEstimateJudgementGroupingDimension"><core:XOtherSpecificCriticalEstimateAndJudgementGroupingDimension.domain>3</core:XOtherSpecificCriticalEstimateAndJudgementGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY0_X-AnalysisDimension_428488_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2020-01-01</startDate>
+<endDate>2020-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-AnalysisDimension_428488_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-AnalysisDimension_428488_2">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>2</common:AnalysisDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary1_X-DetailsSharesHeldInSubsidiaryGroupingDimension_445476_445937_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:SubsidiariesDimension">core:Subsidiary1</xbrldi:explicitMember>
+<xbrldi:typedMember dimension="core:X-DetailsSharesHeldInSubsidiaryGroupingDimension"><core:DetailsOfSharesHeldInSubsidiaryGroupingDimension.domain>1</core:DetailsOfSharesHeldInSubsidiaryGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary2_X-DetailsSharesHeldInSubsidiaryGroupingDimension_445476_445937_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:SubsidiariesDimension">core:Subsidiary2</xbrldi:explicitMember>
+<xbrldi:typedMember dimension="core:X-DetailsSharesHeldInSubsidiaryGroupingDimension"><core:DetailsOfSharesHeldInSubsidiaryGroupingDimension.domain>1</core:DetailsOfSharesHeldInSubsidiaryGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary3_X-DetailsSharesHeldInSubsidiaryGroupingDimension_445476_445937_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:SubsidiariesDimension">core:Subsidiary3</xbrldi:explicitMember>
+<xbrldi:typedMember dimension="core:X-DetailsSharesHeldInSubsidiaryGroupingDimension"><core:DetailsOfSharesHeldInSubsidiaryGroupingDimension.domain>1</core:DetailsOfSharesHeldInSubsidiaryGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_Subsidiary4_X-DetailsSharesHeldInSubsidiaryGroupingDimension_445476_445937_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:SubsidiariesDimension">core:Subsidiary4</xbrldi:explicitMember>
+<xbrldi:typedMember dimension="core:X-DetailsSharesHeldInSubsidiaryGroupingDimension"><core:DetailsOfSharesHeldInSubsidiaryGroupingDimension.domain>1</core:DetailsOfSharesHeldInSubsidiaryGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_CurrentFinancialInstruments_X-AnalysisDimension_384784_385498_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+<xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY1_CurrentFinancialInstruments_X-AnalysisDimension_377486_378141_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+<xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<instant>2021-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="eFY0_CurrentFinancialInstruments_X-AnalysisDimension_377486_378141_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:explicitMember dimension="core:FinancialInstrumentCurrentNon-currentDimension">core:CurrentFinancialInstruments</xbrldi:explicitMember>
+<xbrldi:typedMember dimension="common:X-AnalysisDimension"><common:AnalysisDimension.domain>1</common:AnalysisDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<instant>2020-12-31</instant>
+</period>
+</context>
+
+<context xmlns="http://www.xbrl.org/2003/instance" id="yFY1_X-ParentEntityOrControllingPartyUltimateControllingPartyGroupingDimension_368096_1">
+<entity>
+<identifier scheme="http://www.companieshouse.gov.uk/">01234567</identifier>
+<segment>
+<xbrldi:typedMember dimension="core:X-ParentEntityOrControllingPartyUltimateControllingPartyGroupingDimension"><core:ParentEntityOrControllingPartyAndUltimateControllingPartyGroupingDimension.domain>1</core:ParentEntityOrControllingPartyAndUltimateControllingPartyGroupingDimension.domain></xbrldi:typedMember>
+</segment>
+</entity>
+<period>
+<startDate>2021-01-01</startDate>
+<endDate>2021-12-31</endDate>
+</period>
+</context>
+
+</ix:resources>
+</ix:header>
+</div>
+<div class="WordSection1"><p class="beforetable"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c2"><span class='c1'>COMPANY REGISTRATION NUMBER <span class='c4'><ix:nonNumeric name="bus:UKCompaniesHouseRegisteredNumber" contextRef="yFY1">01234567</ix:nonNumeric></span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span class='c6'><ix:nonNumeric name="bus:EntityCurrentLegalOrRegisteredName" contextRef="yFY1">ABC LIMITED</ix:nonNumeric></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span class='c6'><ix:nonNumeric name="bus:ReportTitle" contextRef="yFY1">ANNUAL REPORT AND FINANCIAL STATEMENTS</ix:nonNumeric></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span class='c8'><ix:nonNumeric name="bus:EndDateForPeriodCoveredByReport" contextRef="eFY1" format="ixt:datedaymonthyearen">31 DECEMBER 2021</ix:nonNumeric></span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c7"><span class='c11'>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>ANNUAL REPORT AND FINANCIAL STATEMENTS</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>YEAR ENDED 31 DECEMBER 2021</span></p></td></tr></table><p class="MsoNormal"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c14'><p class="MsoNormal c13"><span class='c1'>CONTENTS</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>Page</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Company information</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span class='c1'>&#160;</span> <b><span class='c1'>1</span></b></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Strategic report</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span class='c1'>&#160;<b>2</b></span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Directors' report</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span class='c1'>&#160;<b>7</b></span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Statement of directors' responsibilities</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span class='c1'>&#160;<b>8</b></span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Independent auditor's report to the members of ABC LIMITED</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>9</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Profit and loss account and other comprehensive income</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>12</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Balance sheet</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span class='c1'>&#160;<b>13</b></span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Statement of changes in equity</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>14</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c14'><p class="MsoNormal"><span class='c1'>Notes to the financial statements</span></p></td><td class='vat c15'><p class="MsoNormal c16"><span class='c1'>&#160;<b>&#160;15</b></span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c7"><span class='c11'>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>ANNUAL REPORT AND FINANCIAL STATEMENTS</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>COMPANY INFORMATION</span></p></td></tr></table><p class="beforetable"><span class='c17'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c18'><p class="MsoNormal c13"><span class='c1'>Company registration number</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c1'>01234567</span><span></span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal c13"><span class='c1'>Directors</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="yFY1_Director1_363921">T John Smith</ix:nonNumeric></span><span class='c1'></span> <span>&#160;</span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal c13"><span class='c1'>Secretary</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c21'>Colin</span> <span class='c1'> (appointed <span class='c22'>17 January 2022</span>)</span><span></span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal c13"><span class='c1'>Registered office</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="bus:AddressLine1" contextRef="yFY1_RegisteredOffice_363456">200 Disney Avenue</ix:nonNumeric></span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="bus:PrincipalLocation-CityOrTown" contextRef="yFY1_RegisteredOffice_363456">London</ix:nonNumeric></span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="bus:PostalCodeZip" contextRef="yFY1_RegisteredOffice_363456">NS20 8XY</ix:nonNumeric></span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal c13"><span class='c1'>Auditor</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="bus:NameEntityAuditors" contextRef="yFY1">PQR LLP</ix:nonNumeric></span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c1'>150 Lux Square</span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="aurep:NameOrLocationOfficePerformingAudit" contextRef="yFY1">London</ix:nonNumeric></span></p></td></tr><tr><td class='vat c18'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c19'><p class="MsoNormal"><span class='c1'>X40</span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"> <span style='text-decoration: underline;'><span class='c1'>STRATEGIC REPORT</span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"> <span style='text-decoration: underline;'><span><span class='c23'>&#160;</span></span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>Principal activities</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c25'><ix:nonNumeric name="bus:DescriptionPrincipalActivities" contextRef="yFY1">The principal activity of the company during the year was the importation and distribution of wine and spirits. The company is focused on sales and marketing of wine and spirits to the On-Trade, including catering, hotels, restaurants and bars, and to the Off-Trade channels in the United Kingdom. The company also owns a specialist wine retail outlet, sells directly to consumers through a B2C web platform and directly to private clients.</ix:nonNumeric></span><span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>Market conditions</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>2021 saw Government restrict hospitality, 85% of ABC LIMITED's historical channel share, for the first six months of the year. Once restrictions were lifted, the market experienced unprecedented inflation, human resource shortages and global supply chain disruptions. December, the most important month for hospitality trading, saw a strong first week of trading exceeding pre-Covid levels by 5%. However, the Government then enacted a "stealth Omicron Lockdown" reducing the trade to 40% below pre-Covid levels for the remainder of the month. Despite these unprecedented challenges, ABC LIMITED and Coe (Entity) performed well, driving a positive underlying EBITDA for the period. After restrictions eased, Entity saw strong growth, particularly with large new business wins. During a comparable non-restricted period of June - November Entity grew sales 5% over FY19 and gross margin exceeded pre-Covid period by 12%. Covid has created a new market dynamic and through competitors shifting strategies, going into administration, or struggling with outsourced supply chains, Entity is well positioned to profitably grow in 2022 and beyond. The UK consumer has indicated they have missed hospitality and expect to return with fervour.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>Review of business and outlook</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>Despite the unprecedented market conditions, Entity is well positioned for the future.</span></p></td></tr></table><p class="MsoNormal"><span class='c26'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#8226;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>Partnered with a 3PL to target wine-led Nationals creating a unique supply chain proposition</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#8226;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>Grew D2C including picking up large fulfilment contracts diversifying channel risk</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#8226;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>Investor support to ensure liquidity during re-opening working capital requirements</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#8226;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>Retained all key accounts while winning &#163;10m+ of new business</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c27'>&#8226;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>Restored full headcount in all key functions, retraining complete and ready for FY22 growth</span></p></td></tr></table><p class="MsoNormal"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c5"><span>Despite the impact of the Omicron variant on December trading, sales for the year improved to &#163;140.2m <i> (2020 &#163;101.0m)</i> whilst still picking up some share in key market segments. The group generated &#163;0.1m of underlying EBITDA (<i>2020: &#163;3.5m loss</i>) driven by managing key accounts, selling or returning surplus/unwanted stock, supplying more on-line customers whilst managing strong cost controls and reducing all overhead costs possible. This focus has limited the potentially significant impact on profitability and reduced the additional funding required in the year.</span></p></td></tr></table><p class="beforetable"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c29'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span>2021</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span>2020</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span>Var</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span> (&#163;m)</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span> (&#163;m)</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span> (&#163;m)</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span>&#160;</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span>&#160;</span></p></td><td class='vab c30'><p class="MsoNormal c2"><span>&#160;</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal c31"><span>Volume - 9L cases (millions)</span></p></td><td class='vab c30'><p class="MsoNormal c32"><span>2.5</span></p></td><td class='vab c30'><p class="MsoNormal c32"><span>2.1</span></p></td><td class='vab c30'><p class="MsoNormal c32"><span>0.4</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>Turnover</span></p></td><td class='vab c30'><p class="MsoNormal c16"><span>140.2</span></p></td><td class='vab c30'><p class="MsoNormal c16"><span>101.0</span></p></td><td class='vab c30'><p class="MsoNormal c16"><span>39.2</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>Gross profit</span></p></td><td class='vab c30'><p class="MsoNormal c16"><span>16.8</span></p></td><td class='vab c30'><p class="MsoNormal c16"><span>11.5</span></p></td><td class='vab c30'><p class="MsoNormal c16"><span>5.3</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>Admin expenses</span></p></td><td class='vab c33'><p class="MsoNormal c16"><span> (17.3)</span></p></td><td class='vab c33'><p class="MsoNormal c16"><span> (16.1)</span></p></td><td class='vab c33'><p class="MsoNormal c16"><span> (1.2)</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal c13"><span>Operating (loss)</span></p></td><td class='vab c33'><p class="MsoNormal c2"><span> (0.5)</span></p></td><td class='vab c33'><p class="MsoNormal c2"><span> (4.6)</span></p></td><td class='vab c33'><p class="MsoNormal c2"><span>4.1</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>Non-underlying expenses</span></p></td><td class='vab c33'><p class="MsoNormal c16"><span>0.6</span></p></td><td class='vab c33'><p class="MsoNormal c16"><span>1.1</span></p></td><td class='vab c33'><p class="MsoNormal c16"><span> (0.5)</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td><td class='vab c34'><p class="MsoNormal c16"><span>&#160;</span></p></td></tr><tr><td class='vat c29'><p class="MsoNormal c13"><span>Underlying EBITDA</span></p></td><td class='vab c35'><p class="MsoNormal c2"><span>0.1</span></p></td><td class='vab c35'><p class="MsoNormal c2"><span> (3.5)</span></p></td><td class='vab c35'><p class="MsoNormal c2"><span>3.6</span></p></td></tr></table><p class="aftertable"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal"><span>There are a number of non-trading and non-cash items charged in the P&amp;L (such as amortisation of intangibles and depreciation) which adversely impact EBIT but have no bearing on liquidity.</span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"> <span style='text-decoration: underline;'><span class='c1'>STRATEGIC REPORT (cont)</span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span class='c1'>Going concern</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The financial statements have been prepared on a going concern basis which the directors consider to be appropriate, for the following reasons.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The Group experienced challenging trading conditions in the first half of 2021 while COVID restrictions remained in force in the UK. Following the lifting of restrictions on hospitality in May 2021, the Group has seen rolling quarterly EBITDA return to at least pre-COVID levels up to and including June 2022.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The group has an asset-based lending (ABL) facility of up to &#163;30m; &#163;16.0m of that facility was drawn as at 31 December 2021. There are financial covenants attached to the external financing which the Group was in full compliance with as at 31 December 2021. The additional funding made available from shareholders during the period, comprising debt of &#163;4m in February 2021, has meant that no breaches or 'default' events have occurred to date. As at the date of approval of these financial statements, no further funding has been drawn upon by the Group.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The facility was committed until 30 September 2022. On 25 August 2022 the Group signed legally binding agreements with Leumi UK Group Limited for a 3 year &#163;30m ABL facility, to which financial covenants are attached. This replaces the existing &#163;30m ABL facility with PNC which was due to expire in mid-September.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The Group has undertaken a detailed going concern assessment, reviewing its current and projected financial performance and position, including current assets and liabilities, debt maturity profile, future commitments and forecast cash flows. The downside scenarios tested, outlining the impact of severe but plausible adverse scenarios, show that there is sufficient headroom for liquidity and covenant compliance purposes for at least 12 months from the date of approval of these financial statements.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The Board is therefore confident that the Company and the Group have adequate resources to continue in operational existence for at least 12 months from the date of signing these accounts, and therefore believe it remains appropriate to prepare the accounts on a going concern basis. The financial statements do not include any adjustments that would result from the basis of preparation being inappropriate.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span class='c1'>Key Performance Indicators</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>Performance management in the group is through a set of KPIs which are analysed and compared to budget and the previous year. These KPIs include:</span></p></td></tr></table><p class="beforetable"><span class='c17'>&#160;</span></p><table class="MsoNormalTable c42" border="1" cellspacing="0" cellpadding="0"><tr><td class='vat c36'><p class="MsoNormal c13"><span>KPI</span></p></td><td class='vat c37'><p class="MsoNormal c13"><span>2021</span></p></td><td class='vat c37'><p class="MsoNormal c13"><span>2020</span></p></td><td class='vat c38'><p class="MsoNormal c13"><span>Definition and analysis</span></p></td></tr><tr><td class='vat c39'><p class="MsoNormal"><span>Change in Turnover</span></p></td><td class='vat c40'><p class="MsoNormal"><span>38.8 %</span></p></td><td class='vat c40'><p class="MsoNormal"><span> (44.8)%</span></p></td><td class='vat c41'><p class="MsoNormal"><span>Turnover increased as Covid19 lockdown restrictions were eased during the year.</span></p></td></tr><tr><td class='vat c39'><p class="MsoNormal"><span>Gross margin %</span></p></td><td class='vat c40'><p class="MsoNormal"><span>12.0%</span></p></td><td class='vat c40'><p class="MsoNormal"><span>11.4%</span></p></td><td class='vat c41'><p class="MsoNormal"><span>Gross profit margin is calculated as sales less cost of sales, divided by sales, and increased as a result of mix effect of higher proportion of Off-trade sales which is lower profitability business.</span></p></td></tr><tr><td class='vat c39'><p class="MsoNormal"><span>Operating (loss)/profit before restructuring and amortisation costs</span></p></td><td class='vat c40'><p class="MsoNormal"><span>&#163;(190)k</span></p></td><td class='vat c40'><p class="MsoNormal"><span>&#163;(4,216)k</span></p></td><td class='vat c41'><p class="MsoNormal"><span>Operating (loss)/profit is the business' trading profitability from its core operations and has shown an improving position post the easing of Covid19 lockdown restrictions.</span></p></td></tr></table><p class="aftertable"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal"><span>These KPI's are communicated across the business on a regular basis to anticipate changing trends in the industry.</span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"> <span style='text-decoration: underline;'><span class='c1'>STRATEGIC REPORT (cont)</span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"> <span style='text-decoration: underline;'><span><span class='c23'>&#160;</span></span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>Employee engagement</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>Various regular forums are held to communicate and cascade information to the business, this includes business updates and financial reviews through monthly 'town halls', bi-annual conferences, team meetings and information sharing through an employee bulletin. Regular feedback forums where colleagues are encouraged and can provide feedback to our senior management teams are held. The group engaged with colleagues across the business to update our company purpose, values and vision at a conference in February 2022 and the annual company-wide employee survey will also be reinstated in 2022.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>Gender Pay Gap</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The group publishes its gender pay gap reports as required by the Government Equalities Office. Details are publicly available on the website for information.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>Disabled employees</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c25'><ix:nonNumeric name="direp:EmploymentDisabledPersonsPolicy" contextRef="yFY1">The company's policy is to give full and fair consideration to applications for employment made by disabled persons, having regard to their aptitudes and abilities. Entity are proud and stand by the fair treatment and development of all applicants and colleagues regardless of any disability.</ix:nonNumeric></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>Risks</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The management of the business and the execution of the company's strategy are subject to several risks. These risks are set out below along with their risk mitigation.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c31"><span>Customer and Supplier Loss</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The group has a highly fragmented supplier and customer base across several sales channels. The risk of any single customer or supplier having a material impact on the business is therefore mitigated. The business is constantly upgrading and churning the customer base through new customer acquisition and the reviewing of the portfolio to ensure customers remain attracted and excited by our portfolio.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c31"><span>Employees</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The group has enough scale together with systems and processes to not be reliant on any single employee.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c31"><span>Credit Risk</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The group has a team of skilled credit controllers who continually assess customer risk and manage trading in line with agreed credit limits. There is an annual credit limit review with authorisation levels up to the Board.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c31"><span>Liquidity risk</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The group is exposed to liquidity risk in relation to meeting future obligations associated with its financial liabilities, which comprise principally settlement processing obligations and other liabilities (refer to notes 13 &amp; 14). Prudent liquidity risk management includes maintaining sufficient cash and committed credit lines to ensure the availability of an adequate amount of funding to meet the group's obligations.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The group manages this risk, by monitoring future cash flows together with changes in available liquidity on a regular basis. Senior management is updated on a regular basis on the cash flow position of the group. The group financial projections reveal that the financial performance of the group is expected to improve in the foreseeable future following repayment of the COVID-related deferred HMRC payments in August 2022.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c31"><span>Interest rate risk</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The financing that is in place is a working capital (ABL) facility with defined rates linked to the Bank Of England Base rate. Despite recent increases in the Base Rate the overall cost of borrowing remains at relatively low levels, with the new 3-year financing arrangement delivering slightly lower margin rates than the current facility.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c31"><span>Foreign Exchange risk</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The group buys and sells in various foreign currencies and is therefore exposed to adverse currency exchange movements. Details of the group's committed foreign exchange hedging at 31 December are detailed in note 19 The board considers and manages the level of its hedging based on expected future movements in exchange rates.</span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"> <span style='text-decoration: underline;'><span class='c1'>STRATEGIC REPORT (cont)</span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"> <span style='text-decoration: underline;'><span><span class='c23'>&#160;</span></span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c31"><span>Political and Economic Risk</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>T</span><span>he period of uncertainty for the UK economy resulting from Brexit and more latterly the conflict in Ukraine, will undoubtedly continue to have implications for the industry, especially in terms of lengthening supply times and shortages of raw materials such as glass. The current environment of relatively high cost inflation, with the impact on input costs and consumer discretionary spend will also put pressure on the industry. The board are monitoring the situation and working with its suppliers, customers, advisors and financiers to ensure it is best placed to manage the impact of any changes.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c31"><span>Covid19 risk</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>Although the current environment continues to have implications for the industry and our business. The Board, working with our financiers, and taking advantage of government assistance as appropriate, have implemented measures designed to protect the business for the foreseeable future. The company is closely monitoring its performance levels and liquidity against plans made and are taking corrective action where necessary.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>Subsequent Events</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>On 25 August 2022 the Group signed legally binding agreements with Leumi UK Group Limited for a 3 year &#163;30m ABL facility. This replaces the current &#163;30m ABL facility with PNC which was due to expire in mid-September. As at the end of August 2022, the Group had repaid &#163;2m of the outstanding &#163;4m COVID-19 related loan from its parent company, BlueGem Delta SARL.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span style="text-decoration:line-through;"><span><span class='c23'>&#160;</span></span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>Statement by the directors relating to their statutory duties under s172(1) Companies Act 2006</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>The directors<b></b> consider that they have acted in good faith in the way they consider would be the most likely to promote the success of the group for the benefit of its members as a whole in the decisions taken during the year. Decisions are made having regard (amongst other matters) to:</span></p></td></tr></table><p class="MsoNormal"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>business plans prepared by the directors being based around achieving the long-term goals of the company;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>engagement with employees and aiming to be a responsible employer, promoting training and development opportunities for all staff;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>fostering the company's business relationships with suppliers, customers and others, working towards developing long term partnerships creating a consistent premium offering. The group remains committed to being fair and transparent in our dealings with all of our suppliers;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>the impact of the company's operations on the community and the environment committing the company to understanding and minimising the environmental impact of its activities and continually improving its environmental performance as an integral part of its business strategy;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>the desirability of the company maintaining a reputation for high standards of business conduct; and</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#160;</span></p></td><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c14'><p class="MsoNormal c5"><span>the need to act fairly between members of the company, (the "s.172(1) Matters"). The Board meet on a regular basis at which they are reminded of the s.172(1) matters.</span></p></td></tr></table><p class="beforetable"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c44'><p class="MsoNormal"><span>Registered office:</span></p></td><td class='vab c44'><p class="MsoNormal"><span>By order of the board</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span>200 Disney Avenue</span></p></td><td class='vab c44'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span>London</span></p></td><td class='vab c44'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span>NS20 8XY</span></p></td><td class='vab c44'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span>England</span></p></td><td class='vab c44'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vab c44'><p class="MsoNormal c13"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vab c44'><p class="MsoNormal c13"><span>T John Smith</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vab c44'><p class="MsoNormal c13"><span>Director</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vab c44'><p class="MsoNormal"><span>23 September 2022</span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>DIRECTORS' REPORT</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>YEAR ENDED 31 DECEMBER 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c1'>The directors present their annual report and the audited financial statements for the year ended 31 December 2021.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c1'>DIVIDEND</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c1'>No dividend was declared during the year <i> (2020: &#163;nil)</i>.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c1'>DIRECTORS</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c1'>The directors who served the Company during the year and up to the date of signing these financial statements were as follows:</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c1'>T John Smith</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="yFY1_Director2_363921">A Mishra</ix:nonNumeric></span><span class='c1'> (resigned <span class='c45'><ix:nonNumeric name="direp:DateResignation" contextRef="eFY1_Director2_363921" format="ixt:datedaymonthyearen">4 June 2021</ix:nonNumeric></span>)</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="bus:NameEntityOfficer" contextRef="yFY1_Director3_363921">van der Merwe</ix:nonNumeric></span><span class='c1'> (appointed <span class='c46'>7 February 2022</span>, resigned <span class='c47'><ix:nonNumeric name="direp:DateResignation" contextRef="eFY1_Director3_363921" format="ixt:datedaymonthyearen">7 February 2022</ix:nonNumeric></span>)</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c1'>POLITICAL CONTRIBUTIONS</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="direp:PoliticalDonationsFree-textComment" contextRef="yFY1">There were no political donations made in 2021. (<i>2020: &#163;nil</i>)</ix:nonNumeric></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span class='c1'>ENERGY AND CARBON REPORT</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c1'>The company has taken advantage of the exemption to disclose energy and carbon reporting in its company statements given they are included in the parent's group report in the EWGL consolidated accounts.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c1'>DISCLOSURE OF INFORMATION TO AUDITORS</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c20'><ix:nonNumeric name="direp:StatementOnQualityCompletenessInformationProvidedToAuditors" contextRef="yFY1">The directors who held office at the date of approval of this directors' report confirm that so far as they are each aware there is no relevant audit information of which the Company's auditor is unaware; and each director has taken all the steps that they ought to have taken as a director to make themselves aware of any relevant audit information and to establish that the Company's auditor is aware of that information.</ix:nonNumeric></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c1'>AUDITORS</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c1'>Pursuant to Section 487 of the Companies Act 2006, the auditors will be deemed to be reappointed and PQR LLP will therefore continue in office.</span></p></td></tr></table><p class="beforetable"><span class='c17'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c44'><p class="MsoNormal"><span class='c1'>Registered office:</span></p></td><td class='vab c44'><p class="MsoNormal"><span class='c1'>By order of the board</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span class='c1'>200 Disney Avenue</span></p></td><td class='vab c44'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span class='c1'>London</span></p></td><td class='vab c44'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span class='c1'>NS20 8XY</span></p></td><td class='vab c44'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal"><span class='c1'>England</span></p></td><td class='vab c44'><p class="MsoNormal"><span>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vat c44'><p class="MsoNormal c13"><span class='c1'>T John Smith</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vat c44'><p class="MsoNormal c13"><span class='c1'>Director</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vat c44'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c44'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vat c44'><p class="MsoNormal"><span class='c48'><ix:nonNumeric name="direp:DateSigningDirectorsReport" contextRef="eFY1" format="ixt:datedaymonthyearen">23 September 2022</ix:nonNumeric></span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="aftertable"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c50'>Statement OF directors' responsibilities <span class='c49'>in respect</span> of the ANNUAL RePORT and the financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c51'>&#160;</span></p></td></tr><tr><td colspan='1'><ix:nonNumeric name="direp:StatementThatDirectorsAcknowledgeTheirResponsibilitiesUnderCompaniesAct" contextRef="yFY1"><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c52'>The directors are responsible for preparing the Annual Report and the financial statements in accordance with applicable law and regulations.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c53'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c52'>Company law requires the directors to prepare financial statements for each financial year. Under that law they have elected to prepare the financial statements in accordance with UK accounting standards and applicable law (UK Generally Accepted Accounting Practice), including FRS 102 <i>The Financial Reporting Standard applicable in the UK and Republic of Ireland</i>.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c52'>Under company law the directors must not approve the financial statements unless they are satisfied that they give a true and fair view of the state of affairs of the company and of the profit or loss of the company for that period. In preparing these financial statements, the directors are required to:</span></p></td></tr></table><p class="MsoNormal"><span class='c25'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>select suitable accounting policies and then apply them consistently;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>make judgements and estimates that are reasonable and prudent;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>state whether applicable UK accounting standards have been followed, subject to any material departures disclosed and explained in the financial statements;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>assess the company's ability to continue as a going concern, disclosing, as applicable, matters related to going concern; and</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c54'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c52'>use the going concern basis of accounting unless they either intend to liquidate the company or to cease operations, or have no realistic alternative but to do so.</span></p></td></tr></table><p class="MsoNormal"><span class='c25'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c52'>The directors are responsible for keeping adequate accounting records that are sufficient to show and explain the company's transactions and disclose with reasonable accuracy at any time the financial position of the company and enable them to ensure that the financial statements comply with the Companies Act 2006. They are responsible for such internal control as they determine is necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error, and have general responsibility for taking such steps as are reasonably open to them to safeguard the assets of the company and to prevent and detect fraud and other irregularities. </span></p></td></tr></table></ix:nonNumeric></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c11'>INDEPENDENT AUDITOR'S REPORT TO THE MEMBERS OF ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>Opinion</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>We have audited the financial statements of ABC LIMITED ("the company") for the year ended 31 December 2021 which comprise the Profit and Loss Account and Other Comprehensive Income, the Balance Sheet, the Statement of Changes in Equity and related notes, including the accounting policies in note 1.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td colspan='1'><ix:nonNumeric name="aurep:OpinionAuditorsOnEntity" contextRef="yFY1"><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'>In our opinion the financial statements:</span></p></td></tr></table><p class="MsoNormal"><span class='c57'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c58'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c25'>give a true and fair view of the state of the company's affairs as at 31 December 2021 and of its loss for the year then ended;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c59'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c58'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c25'>have been properly prepared in accordance with UK accounting standards, including FRS 102 <i>The Financial Reporting Standard applicable in the UK and Republic of Ireland</i>; and</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c59'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c58'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c25'>have been prepared in accordance with the requirements of the Companies Act 2006. </span></p></td></tr></table></ix:nonNumeric></td></tr></table><p class="MsoNormal"><span class='c56'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c13"><span>Basis for opinion</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c13"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'><ix:nonNumeric name="aurep:BasisForOpinionAuditorsOnEntity" contextRef="yFY1">We conducted our audit in accordance with International Standards on Auditing (UK) ("ISAs (UK)") and applicable law. Our responsibilities are described below. We have fulfilled our ethical responsibilities under, and are independent of the company in accordance with, UK ethical requirements including the FRC Ethical Standard. We believe that the audit evidence we have obtained is a sufficient and appropriate basis for our opinion.</ix:nonNumeric></span><span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>Going concern</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>The directors have prepared the financial statements on the going concern basis as they do not intend to liquidate the Company or to cease its operations, and as they have concluded that the Company's financial position means that this is realistic. They have also concluded that there are no material uncertainties that could have cast significant doubt over its ability to continue as a going concern for at least a year from the date of approval of the financial statements ("the going concern period").</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>In our evaluation of the directors' conclusions, we considered the inherent risks to the Company's business model and analysed how those risks might affect the Company's financial resources or ability to continue operations over the going concern period.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span>Our conclusions based on this work:</span></p></td></tr></table><p class="MsoNormal"><span class='c56'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>we consider that the directors' use of the going concern basis of accounting in the preparation of the financial statements is appropriate;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c61'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>we have not identified, and concur with the directors' assessment that there is not, a material uncertainty related to events or conditions that, individually or collectively, may cast significant doubt on the Company's ability to continue as a going concern for the going concern period.</span></p></td></tr></table><p class="MsoNormal"><span class='c56'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal"><span>However, as we cannot predict all future events or conditions and as subsequent events may result in outcomes that are inconsistent with judgements that were reasonable at the time they were made, the above conclusions are not a guarantee that the Company will continue in operation.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>Fraud and breaches of laws and regulations - ability to detect</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c62"><span>Identifying and responding to risks of material misstatement due to fraud</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c62"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>To identify risks of material misstatement due to fraud ("fraud risks") we assessed events or conditions that could indicate an incentive or pressure to commit fraud or provide an opportunity to commit fraud. Our risk assessment procedures included:</span></p></td></tr></table><p class="MsoNormal"><span class='c63'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>Enquiring of directors, and inspection of policy documentation, as to the Company's high-level policies and procedures to prevent and detect fraud, as well as whether they have knowledge of any actual, suspected or alleged fraud.</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c61'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>Reading Board minutes.</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c61'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>Using analytical procedures to identify any unusual or unexpected relationships.</span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>We communicated identified fraud risks throughout the audit team and remained alert to any indications of fraud throughout the audit.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>As required by auditing standards, and taking into account possible pressures to meet profit targets, we perform procedures to address the risk of management override of controls, in particular the risk that management may be in a position to make inappropriate accounting entries. On this audit we do not believe there is a fraud risk related to revenue recognition because sales are individually low value meaning there would need to be a significant number of fraudulent transactions in order for there to be a material impact on the financial statements.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>W</span><span>e did not identify any additional fraud risks.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>We performed procedures including:</span></p></td></tr></table><p class="MsoNormal"><span class='c64'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>Identifying journal entries and other adjustments to test based on risk criteria and comparing the identified entries to supporting documentation. These included revenue and cash related journals posted to unusual accounts.</span></p></td></tr></table><p class="MsoNormal"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c62"><span>Identifying and responding to risks of material misstatement due to non-compliance with laws and regulations</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c62"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>We identified areas of laws and regulations that could reasonably be expected to have a material effect on the financial statements from our general commercial and sector experience and through discussion with the directors and other management (as required by auditing standards), and discussed with the directors and other management the policies and procedures regarding compliance with laws and regulations.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>We communicated identified laws and regulations throughout our team and remained alert to any indications of non-compliance throughout the audit.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>The potential effect of these laws and regulations on the financial statements varies considerably.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>Firstly, the Company is subject to laws and regulations that directly affect the financial statements including financial reporting legislation (including related companies legislation), distributable profits legislation and taxation legislation and we assessed the extent of compliance with these laws and regulations as part of our procedures on the related financial statement items.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>Secondly, the Company is subject to many other laws and regulations where the consequences of non-compliance could have a material effect on amounts or disclosures in the financial statements, for instance through the imposition of fines or litigation. We identified the following areas as those most likely to have such an effect: health and safety, data protection and employment law, recognising the nature of the Company's activities. Auditing standards limit the required audit procedures to identify non-compliance with these laws and regulations to enquiry of the directors and other management and inspection of regulatory and legal correspondence, if any. Therefore if a breach of operational regulations is not disclosed to us or evident from relevant correspondence, an audit will not detect that breach.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c62"><span>Context of the ability of the audit to detect fraud or breaches of law or regulation</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c62"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>Owing to the inherent limitations of an audit, there is an unavoidable risk that we may not have detected some material misstatements in the financial statements, even though we have properly planned and performed our audit in accordance with auditing standards. For example, the further removed non-compliance with laws and regulations is from the events and transactions reflected in the financial statements, the less likely the inherently limited procedures required by auditing standards would identify it.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>In addition, as with any audit, there remained a higher risk of non-detection of fraud, as these may involve collusion, forgery, intentional omissions, misrepresentations, or the override of internal controls. Our audit procedures are designed to detect material misstatement. We are not responsible for preventing non-compliance or fraud and cannot be expected to detect non-compliance with all laws and regulations.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>Strategic report and directors' report</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>The directors are responsible for the strategic report and the directors' report. Our opinion on the financial statements does not cover those reports and we do not express an audit opinion thereon.</span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span>Our responsibility is to read the strategic report and the directors' report and, in doing so, consider whether, based on our financial statements audit work, the information therein is materially misstated or inconsistent with the financial statements or our audit knowledge. Based solely on that work:</span></p></td></tr></table><p class="MsoNormal"><span class='c56'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>we have not identified material misstatements in the strategic report and the directors' report;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c61'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>in our opinion the information given in those reports for the financial year is consistent with the financial statements; and</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c61'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c43'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span>in our opinion those reports have been prepared in accordance with the Companies Act 2006.</span></p></td></tr></table><p class="MsoNormal"><span class='c56'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c24"><span>Matters on which we are required to report by exception</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c56'>&#160;</span></p></td></tr><tr><td colspan='1'><ix:nonNumeric name="aurep:StatementOnMattersOnWhichAuditorReportsByException" contextRef="yFY1"><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'>Under the Companies Act 2006 we are required to report to you if, in our opinion:</span></p></td></tr></table><p class="MsoNormal"><span class='c57'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c58'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c25'>adequate accounting records have not been kept, or returns adequate for our audit have not been received from branches not visited by us; or</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c59'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c58'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c25'>the financial statements are not in agreement with the accounting records and returns; or</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c59'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c58'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c25'>certain disclosures of directors' remuneration specified by law are not made; or</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c59'>&#160;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c28'><p class="MsoNormal c5"><span class='c58'>&#183;</span></p></td><td class='vat c55'><p class="MsoNormal c5"><span class='c25'>we have not received all the information and explanations we require for our audit.</span></p></td></tr></table><p class="MsoNormal"><span class='c57'>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'>We have nothing to report in these respects. </span></p></td></tr></table></ix:nonNumeric></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td colspan='1'><ix:nonNumeric name="aurep:StatementOnRespectiveResponsibilitiesDirectorsAuditors" contextRef="yFY1"><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c25'>Directors' responsibilities</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'>As explained more fully in their statement set out on page 8, the directors are responsible for: the preparation of the financial statements and for being satisfied that they give a true and fair view; such internal control as they determine is necessary to enable the preparation of financial statements that are free from material misstatement, whether due to fraud or error; assessing the company's ability to continue as a going concern, disclosing, as applicable, matters related to going concern; and using the going concern basis of accounting unless they either intend to liquidate the company or to cease operations, or have no realistic alternative but to do so.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c25'>Auditor's responsibilities</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'>Our objectives are to obtain reasonable assurance about whether the financial statements as a whole are free from material misstatement, whether due to fraud or error, and to issue our opinion in an auditor's report. Reasonable assurance is a high level of assurance, but does not guarantee that an audit conducted in accordance with ISAs (UK) will always detect a material misstatement when it exists. Misstatements can arise from fraud or error and are considered material if, individually or in aggregate, they could reasonably be expected to influence the economic decisions of users taken on the basis of the financial statements.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c60'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'>A fuller description of our responsibilities is provided on the FRC's website at  <span style='text-decoration: underline;'>www.frc.org.uk/auditorsresponsibilities</span>.</span></p></td></tr></table></ix:nonNumeric></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>The purpose of our audit work and to whom we owe our responsibilities</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c24"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c25'><ix:nonNumeric name="aurep:StatementOnScopeAuditReport" contextRef="yFY1">This report is made solely to the company's members, as a body, in accordance with Chapter 3 of Part 16 of the Companies Act 2006. Our audit work has been undertaken so that we might state to the company's members those matters we are required to state to them in an auditor's report and for no other purpose. To the fullest extent permitted by law, we do not accept or assume responsibility to anyone other than the company and the company's members, as a body, for our audit work, for this report, or for the opinions we have formed.</ix:nonNumeric></span><span></span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c5"><span class='c56'>&#160;</span></p></td></tr></table><p style='page-break-before: always'><span>&#160;</span></p><p class="MsoNormal"><span></span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal c12"><span>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Annual report and financial statements</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>Year ended 31<sup>st</sup> December 2021</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c12"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span class='c11'>ABC LIMITED</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span class='c11'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>PROFIT AND LOSS ACCOUNT AND OTHER COMPREHENSIVE INCOME</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span>YEAR ENDED 31 DECEMBER 2021</span></p></td></tr></table><p class="beforetable"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c65'><p class="MsoNormal"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'>2021</span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c1'>2020</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>Note</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'>&#160;&#163;000</span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c1'>&#163;000</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>TURNOVER</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>2</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c52'><ix:nonFraction name="core:TurnoverRevenue" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">140,159</ix:nonFraction></span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c67'><ix:nonFraction name="core:TurnoverRevenue" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">100,977</ix:nonFraction></span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c68'><p class="MsoNormal"><span class='c1'>Cost of sales</span></p></td><td class='vat c69'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c70'><p class="MsoNormal c2"><span class='c1'> (<span class='c25'><ix:nonFraction name="core:CostSales" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">123,266</ix:nonFraction></span>)</span></p></td><td class='vat c70'><p class="MsoNormal c16"><span class='c1'> (<span class='c71'><ix:nonFraction name="core:CostSales" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">89,457</ix:nonFraction></span>)</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>GROSS PROFIT</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c16"><b><span class='c52'><ix:nonFraction name="core:GrossProfitLoss" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">16,893</ix:nonFraction></span></b><b><span class='c25'></span></b><span class='c1'></span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c67'><ix:nonFraction name="core:GrossProfitLoss" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">11,520</ix:nonFraction></span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>Administrative expenses</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c74'><p class="MsoNormal c2"><span class='c1'>&#160;(<span class='c25'><ix:nonFraction name="core:AdministrativeExpenses" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">17,083</ix:nonFraction></span>)</span></p></td><td class='vat c74'><p class="MsoNormal c16"><span class='c1'> (<span class='c71'><ix:nonFraction name="core:AdministrativeExpenses" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">15,736</ix:nonFraction></span>)</span></p></td></tr><tr><td class='vat c75'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td><td class='vat c76'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c74'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c74'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c77'><p class="MsoNormal c13"><span class='c1'>OPERATING (LOSS)/PROFIT BEFORE RESTRUCTURING EXPENSES AND AMORTISATION</span></p></td><td class='vat c78'><p class="MsoNormal c7"><span>&#160;</span></p></td><td class='vab c79'><p class="MsoNormal c2"><span class='c1'> (<span class='c22'>190</span>)</span></p></td><td class='vab c80'><p class="MsoNormal c16"><span class='c1'> (<span class='c22'>4,216</span>)</span></p></td></tr><tr><td class='vat c77'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c81'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c77'><p class="MsoNormal"><span class='c1'>Restructuring expenses</span></p></td><td class='vat c15'><p class="MsoNormal c12"><span>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'> (<span class='c25'><ix:nonFraction name="core:RestructuringCosts" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3">313</ix:nonFraction></span>)</span></p></td><td class='vat c81'><p class="MsoNormal c16"><span class='c1'> (<span class='c71'><ix:nonFraction name="core:RestructuringCosts" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3">624</ix:nonFraction></span>)</span></p></td></tr><tr><td class='vat c77'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c12"><span>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c81'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c77'><p class="MsoNormal"><span class='c1'>Amortisation of goodwill</span></p></td><td class='vat c15'><p class="MsoNormal c12"><span>&#160;</span></p></td><td class='vat c74'><p class="MsoNormal c2"><span class='c1'> (<span class='c25'><ix:nonFraction name="core:AmortisationExpenseIntangibleAssets" contextRef="yFY1_NetGoodwill_419495" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">2,134</ix:nonFraction></span>)</span></p></td><td class='vat c80'><p class="MsoNormal c16"><b><span class='c1'> (<span class='c71'></span></span></b><span class='c67'><ix:nonFraction name="core:AmortisationExpenseIntangibleAssets" contextRef="yFY0_NetGoodwill_419495" unitRef="GBP" decimals="-3" scale="3" format="ixt:numdotdecimal">1,401</ix:nonFraction></span><span class='c1'>)</span></p></td></tr><tr><td class='vat c82'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td><td class='vat c76'><p class="MsoNormal c12"><span>&#160;</span></p></td><td class='vat c74'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c80'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c83'><p class="MsoNormal c13"><span class='c1'>OPERATING LOSS</span></p></td><td class='vat c78'><p class="MsoNormal c7"><span class='c1'>3</span></p></td><td class='vat c74'><p class="MsoNormal c2"><span class='c1'> (<span class='c25'><ix:nonFraction name="core:OperatingProfitLoss" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" sign="-" format="ixt:numdotdecimal">2,637</ix:nonFraction></span>)</span></p></td><td class='vat c74'><p class="MsoNormal c16"><span class='c1'> (<span class='c71'><ix:nonFraction name="core:OperatingProfitLoss" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" sign="-" format="ixt:numdotdecimal">6,241</ix:nonFraction></span>)</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>Interest payable and similar charges</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>6</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'> (<span class='c25'><ix:nonFraction name="core:InterestPayableSimilarChargesFinanceCosts" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3">636</ix:nonFraction></span>)</span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c1'> (<span class='c71'><ix:nonFraction name="core:InterestPayableSimilarChargesFinanceCosts" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3">712</ix:nonFraction></span>)</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>Foreign exchange gain/(loss)</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c74'><p class="MsoNormal c2"><span class='c52'><ix:nonFraction name="core:GainLossDueToForeignExchangeDifferencesRecognisedInProfitOrLoss" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3">281</ix:nonFraction></span></p></td><td class='vat c74'><p class="MsoNormal c16"><span class='c67'><ix:nonFraction name="core:GainLossDueToForeignExchangeDifferencesRecognisedInProfitOrLoss" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3">33</ix:nonFraction></span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>LOSS BEFORE TAXATION</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'> (<span class='c25'><ix:nonFraction name="core:ProfitLossOnOrdinaryActivitiesBeforeTax" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" sign="-" format="ixt:numdotdecimal">2,992</ix:nonFraction></span>)</span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c1'> (<span class='c71'><ix:nonFraction name="core:ProfitLossOnOrdinaryActivitiesBeforeTax" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" sign="-" format="ixt:numdotdecimal">6,920</ix:nonFraction></span>)</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c66'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>Tax credit on loss on ordinary activities</span></p></td><td class='vat c15'><p class="MsoNormal c7"><span class='c1'>7</span></p></td><td class='vat c74'><p class="MsoNormal c2"><span class='c52'><ix:nonFraction name="core:TaxTaxCreditOnProfitOrLossOnOrdinaryActivities" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" sign="-" format="ixt:numdotdecimal">2,216</ix:nonFraction></span></p></td><td class='vat c74'><p class="MsoNormal c16"><span class='c67'><ix:nonFraction name="core:TaxTaxCreditOnProfitOrLossOnOrdinaryActivities" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" sign="-">196</ix:nonFraction></span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>LOSS FOR THE FINANCIAL YEAR</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c84'><p class="MsoNormal c2"><span class='c1'> (<span class='c25'><ix:nonFraction name="core:ProfitLoss" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" sign="-">776</ix:nonFraction></span>)</span></p></td><td class='vat c84'><p class="MsoNormal c16"><span class='c1'> (<span class='c71'><ix:nonFraction name="core:ProfitLoss" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" sign="-" format="ixt:numdotdecimal">6,724</ix:nonFraction></span>)</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>Other comprehensive income</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span>&#160;</span></p></td><td class='vat c74'><p class="MsoNormal c2"><span class='c1'>-</span></p></td><td class='vat c74'><p class="MsoNormal c16"><span class='c1'>-</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c73'><p class="MsoNormal c16"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c65'><p class="MsoNormal c13"><span class='c1'>TOTAL COMPREHENSIVE LOSS FOR THE YEAR</span></p></td><td class='vat c15'><p class="MsoNormal c2"><span class='c1'>&#160;</span></p></td><td class='vat c84'><p class="MsoNormal c2"><span class='c1'> (<span class='c25'><ix:nonFraction name="core:ComprehensiveIncomeExpense" contextRef="yFY1" unitRef="GBP" decimals="-3" scale="3" sign="-">776</ix:nonFraction></span>)</span></p></td><td class='vat c84'><p class="MsoNormal c16"><span class='c1'> (<span class='c71'><ix:nonFraction name="core:ComprehensiveIncomeExpense" contextRef="yFY0" unitRef="GBP" decimals="-3" scale="3" sign="-" format="ixt:numdotdecimal">6,724</ix:nonFraction></span>)</span></p></td></tr></table><p class="aftertable"><span>&#160;</span></p><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td colspan='1'><ix:nonNumeric name="core:IncomeStatementFree-textComment" contextRef="yFY1"><table class="MsoNormalTable c9" border="0" cellspacing="0" cellpadding="0"><tr><td class='vat c3'><p class="MsoNormal"><span class='c20'>All of the activities of the Company are classed as continuing.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c20'>&#160;</span></p></td></tr></table></ix:nonNumeric></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c20'>The Company has no recognised gains or losses other than the results for the year as set out above.</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal"><span class='c1'>&#160;</span></p></td></tr><tr><td class='vat c3'><p class="MsoNormal c7"><span class='c1'>The notes on pages 15 to 30 form part of these financial statements</span></p></td></tr></table></div><div></div></body></html>
